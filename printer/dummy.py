@@ -68,7 +68,6 @@ def print_format_table():
             s1 = ''
             for bg in range(40,48):
                 format = ';'.join([str(style), str(fg), str(bg)])
-                print(format)
                 s1 += '\x1b[%sm %s \x1b[0m' % (format, format)
             print(s1)
         print('\n')
@@ -84,13 +83,13 @@ for i in range(24):
     print(colors)
     x = x + 5
 
-from rich import print
-print("[red]Color[/] in the [bold magenta]Terminal[/]!")
+# from rich import print
+# print("[red]Color[/] in the [bold magenta]Terminal[/]!")
 
-try:
-    x = int(input("Please enter a number: "))
-    # break
-except ValueError as e:
+# try:
+#     x = int(input("Please enter a number: "))
+#     # break
+# except ValueError as e:
     
-    print("Oops!  That was no valid number.  Try again...\n", e)
-    print("Oops!  That was no valid number.  Try again...\n", str(e.args).split(':')[0])
+#     print("Oops!  That was no valid number.  Try again...\n", e)
+#     print("Oops!  That was no valid number.  Try again...\n", str(e.args).split(':')[0])
