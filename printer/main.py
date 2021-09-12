@@ -25,3 +25,5 @@ from printer import Printer
 print = Printer()
 print.log_message("WARN", "Hi There")
 print.log_message("INFO", "Hi There")
+print.log_message("ERROR", "Hi There")
+print.log_message("GEN", "Hi There")
