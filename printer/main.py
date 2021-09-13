@@ -22,8 +22,13 @@
 
 from printer import Printer
 
+json_object = {"name":"John", "age":30, "car":"null"}
+type(json_object)
+
 print = Printer()
-print.log_message("WARN", "Hi There")
-print.log_message("INFO", "Hi There")
-print.log_message("ERROR", "Hi There")
-print.log_message("GEN", "Hi There")
+print.log_message("ERROR", "Got and error: ")
+print.log_message("INFO", "Got and error: \n", data=json_object)
+# print.log_message("INFO", "Hi There")
+# print.log_message("ERROR", "Hi There")
+# print.log_message("GENERAL", "Hi There")
+# print.log_message("GEN", "Hi There")
