@@ -1,6 +1,5 @@
-# Pretty Printer
-> for a lack of a better word
+# datapeek
 
-Building a tool to help with displaying nice formatted messages for debugging in python, from warnings, errors and messages.
+A python package to display data in a more fluent and well formatted manner using colours and smart formatting
 
 just for fun!
